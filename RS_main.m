@@ -15,5 +15,5 @@ for ii = 1:5 %对5组信号进行译码
  new_msg(ii,:) = rs_rrscode(in_msg(ii,:),all_code_msg,all_msg);
 end
 new_msg%译码输出
-num_same = same(msg,new_msg); %译码正确个数
+num_same = same(msg,new_msg); %译码正确数
 num =num_same/15 %译码正确率
